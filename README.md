@@ -1,12 +1,13 @@
 # Marrow
 
-A local-first, single-user markdown notes app. Notes are plain `.md` files on your own disk; Marrow adds a fast editor, search and linking on top.
+A local-first markdown notes app for one person. Notes are plain `.md` files on your own disk. Marrow adds a fast editor, search and linking, and optionally syncs your notes across your own devices and publishes the ones you choose as a public read-only site.
 
 ## Goals
 
-- **Local-first** — notes live as plain markdown files in a folder you choose. No accounts, no cloud, no lock-in.
-- **Fast** — instant full-text search and navigation, even with thousands of notes.
-- **Linked thinking** — `[[wiki-links]]`, backlinks and a graph view.
+- **Local-first.** Notes are plain markdown files in a folder you choose. The app works fully offline, and you are never locked in.
+- **Single user.** Marrow has one owner: you. There is no public sign-up and no shared or collaborative editing.
+- **Fast.** Search and navigation stay instant, even with thousands of notes.
+- **Linked thinking.** `[[wiki-links]]`, backlinks and a graph view.
 
 ## Planned features
 
@@ -15,15 +16,18 @@ A local-first, single-user markdown notes app. Notes are plain `.md` files on yo
 - [ ] Full-text search
 - [ ] `[[wiki-links]]`, backlinks and graph view
 - [ ] Attachments (images, files)
-- [ ] Import / export
-- [ ] Light / dark themes and keyboard shortcuts
+- [ ] Import and export
+- [ ] Light and dark themes, keyboard shortcuts
 - [ ] Note version history
+- [ ] **Self-hosted sync** between your own devices, through a Marrow server you run yourself
+- [ ] **Owner login** to protect your server: one owner account, with device tokens for your own devices
+- [ ] **Publish** selected notes as a public, read-only website (no visitor accounts, no tracking)
 - [ ] Mobile companion app
 
 ## Stack
 
-- **Backend:** Go — serves the API and watches the notes folder
-- **Frontend:** React + TypeScript
+- **Backend:** Go. It serves the API, watches the notes folder and handles sync and publishing.
+- **Frontend:** React and TypeScript.
 
 ## Status
 
